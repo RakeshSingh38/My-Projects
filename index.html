@@ -5,40 +5,56 @@
         <meta charset="utf-8">
         <title>Odin project</title>
         <style>
-            html,
-            body {
+            * {
                 background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-                /* height: 100%; */
-                /* overflow: auto; */
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                overflow: auto;
             }
 
-            .recipes {
+            .recipe {
                 display: flex;
                 justify-content: center;
                 margin: 10px;
+
             }
-            
+
             .title {
                 text-align: center;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            .dishes {
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 1.3em;
+                margin:  20px 10px 20px;
+                text-align: center;
+                font-size: 1.2em;
             }
         </style>
     </head>
 
     <body>
         <h1 class="title">Odin Recipes</h1>
-        <!-- <img src="https://www.allrecipes.com/thmb/6gvWZ4Tc8H9ZEbMsAD-1qWmhBo4=/2000x666/filters:no_upscale():max_bytes(150000):strip_icc():focal(1999x0:2001x2):format(webp)/GOLDMAN_ALR_Holiday23_Classis_3485-3x1-58423a14313a49189fc23c3649f85d8b.jpg" width="800px" height="300px" alt="image" > -->
-        <div class="recipes">
+        <div class="recipe">
             <img src="./images/dishes.gif" alt="Cooking image" width="800px" height="500px">
             <br>
-            <br>
         </div>
-            <h3>A collection of all famous recipes around the world</h3>
+
+        <div class="dishes">
+            <h3>A collection of all famous Indian Recipes around the world</h3>
+            <br>
             <ol>
                 <li><a href="./recipes/Tandoori_Chicken.html">Tandoori Chicken</a> </li>
                 <li><a href="./recipes/Chicken_Makhani.html">Chicken Makhani</a> </li>
-                <li><a href="./recipes/Chicken_Milanese.html">Chicken Milanese</a> </li>
+                <li><a href="./recipes/Chicken_Curry.html">Chicken Curry</a> </li>
             </ol>
-
+        </div>
 
     </body>
 
